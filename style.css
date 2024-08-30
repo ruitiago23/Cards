@@ -1,0 +1,299 @@
+body{
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: lime;
+  
+}
+
+.card {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.corner {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-left {
+  position:absolute;
+  align-self: flex-start;
+}
+
+.bottom-right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-suit {
+  font-size: 70px;
+}
+  
+.black {
+  color: black;
+}
+  
+.red {
+  color: red;
+}
+
+.ace{
+  font-size: 80px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.two {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.four {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.five {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.six {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seven {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.eight {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nine {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ten {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.top-symbol {
+  justify-content: space-around; 
+}
+ 
+.bottom-symbol {
+  justify-content: space-around;
+}
+
+.top-center-two{
+  margin-top: 0;
+}
+
+.low-center-two{
+  margin-top: 30%;
+}
+
+.center-symbol {
+  position: absolute;
+}
+
+.mid-top-symbol {
+  justify-content: space-around;
+  position: relative;
+  top: -5%;
+}
+
+.mid-bottom-symbol {
+  justify-content: space-around;
+  position: relative;
+  bottom: 5%;
+}
+
+.bottom-nine {
+  justify-content: space-around;
+  position: relative;
+  bottom: 10%;
+}
+
+.center-nine {
+  position: absolute;
+  top: 38%;
+}
+
+.top-center-symbol {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 20%;
+}
+ 
+.bottom-center-symbol {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 20%;
+}
+
+.top-center-ten {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 15%;
+}
+
+.bottom-center-ten {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 12%;
+}
+
+.card-image {
+  max-width: 75%;
+  position:absolute;
+  top: 9%;
+  align-self: center;
+}
+
+.card:hover #back {
+  opacity: 1;
+  z-index: 1;
+}
+
+.reverse {
+  transform: rotate(180deg);
+}
+
+#back {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: aqua;
+}
+
+.deck-left {
+  transform: rotate(90deg);
+  grid-column: 2;
+  grid-row: 2;
+  scale: 40%;
+}
+
+.deck-right{
+  transform: rotate(90deg);
+  grid-column: 8;
+  grid-row: 2;
+  scale: 40%;
+}
+
+.card-player1{
+  transform: rotate(90deg);
+  grid-column: 4;
+  grid-row: 2;
+  scale: 40%;
+}
+
+.card-player2{
+  transform: rotate(90deg);
+  grid-column: 6;
+  grid-row: 2;
+  scale: 40%;
+}
+
+#deck1 {
+  width: 100%;
+  border: 5px;
+  border-radius: 15px;
+}
+
+#deck2 {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.button {
+	box-shadow: 3px 3px 3px black;
+  background-color: azure;
+	color: black; 
+	font-size: 25px; 
+	margin: 10px;
+	padding: 10px;
+	width: 170px; 
+}
+
+.button:hover {
+	background-color: goldenrod;
+}

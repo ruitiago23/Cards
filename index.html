@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="buttons">
+        <button class="button">DEAL</button><br>
+        <button class="button">NEW GAME</button>
+        </div>
+        <div class="deck-left"><img src="./images/card_back.jpeg" id="deck1" alt="deck player one"></div>
+        <div class="card-player1"></div>
+        <div class="card-player2"></div>
+        <div class="deck-right"><img src="./images/card_back.jpeg" id="deck2" alt="deck player two"></div>
+    </div>
+    
+    <div class="card-container">
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">A</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="ace of spades">
+              <div class="ace">
+                <span class="centersuit">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">A</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">A</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="ace of hearts">
+              <div class="ace">
+                <span class="suit">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">A</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+        
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">A</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="ace of diamonds">
+              <div class="ace">
+                <span class="suit">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">A</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">A</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="ace of clubs">
+              <div class="ace">
+                <span class="suit">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">A</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">2</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="two of spades">
+              <div class="two">
+                <span class="spade center-suit top-center-two">♠</span>
+                <span class="spade center-suit low-center-two reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">2</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">2</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="two of hearts">
+              <div class="two">
+                <span class="heart center-suit top-center-two">♥</span>
+                <span class="heart center-suit low-center-two reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">2</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">2</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="two of diamonds">
+              <div class="two">
+                <span class="diamond center-suit top-center-two">♦</span>
+                <span class="diamond center-suit low-center-two reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">2</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">2</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="two of clubs">
+              <div class="two">
+                <span class="club center-suit top-center-two">♣</span>
+                <span class="club center-suit low-center-two reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">2</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">3</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="three of spades">
+              <div class="three">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">3</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">3</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="three of hearts">
+              <div class="three">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">3</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">3</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="three of diamonds">
+              <div class="three">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">3</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">3</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="three of clubs">
+              <div class="three">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">3</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">4</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="four of spades">
+              <div class="four top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="four bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">4</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">4</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="four of hearts">
+              <div class="four top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="four bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">4</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">4</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="four of diamonds">
+              <div class="four top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="four bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">4</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">4</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="four of clubs">
+              <div class="four top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="four bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">4</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+        
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">5</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="five of spades">
+              <div class="five top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="five center-symbol">
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="five bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">5</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">5</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="five of hearts">
+              <div class="five top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="five center-symbol">
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="five bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">5</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">5</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="five of diamonds">
+              <div class="five top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="five center-symbol">
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="five bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">5</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">5</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="five of clubs">
+              <div class="five top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="five center-symbol">
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="five bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">5</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">6</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="six of spades">
+              <div class="six top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="six top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="six bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">6</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">6</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="six of hearts">
+              <div class="six top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="six top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="six bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">6</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">6</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="six of diamonds">
+              <div class="six top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="six top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="six bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">6</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">6</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="six of clubs">
+              <div class="six top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="six top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="six bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">6</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">7</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="seven of spades">
+              <div class="seven top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="seven top-center-symbol">
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="seven top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="seven bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">7</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">7</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="seven of hearts">
+              <div class="seven top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="seven top-center-symbol">
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="seven top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="seven bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">7</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">7</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="seven of diamonds">
+              <div class="seven top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="seven top-center-symbol">
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="seven top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="seven bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">7</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">7</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="seven of clubs">
+              <div class="seven top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="seven top-center-symbol">
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="seven top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="seven bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">7</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">8</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="eight of spades">
+              <div class="eight top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="eight top-center-symbol">
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="eight top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="eight bottom-center-symbol">
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+              <div class="eight bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">8</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">8</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="eight of hearts">
+              <div class="eight top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="eight top-center-symbol">
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="eight top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="eight bottom-center-symbol">
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+              <div class="eight bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">8</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">8</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="eight of diamonds">
+              <div class="eight top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="eight top-center-symbol">
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="eight top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="eight bottom-center-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+              <div class="eight bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">8</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">8</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="eight of clubs">
+              <div class="eight top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="eight top-center-symbol">
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="eight top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="eight bottom-center-symbol">
+                <span class="club center-suit reverse">♣</span>
+              </div>
+              <div class="eight bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">8</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">9</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="nine of spades">
+              <div class="nine top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="nine mid-top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="nine center-nine">
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="nine mid-bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+              <div class="nine bottom-nine">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">9</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">9</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="nine of hearts">
+              <div class="nine top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="nine mid-top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="nine center-nine">
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="nine mid-bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+              <div class="nine bottom-nine">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">9</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">9</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="nine of diamonds">
+              <div class="nine top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="nine mid-top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="nine center-nine">
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="nine mid-bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+              <div class="nine bottom-nine">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">9</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">9</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="nine of clubs">
+              <div class="nine top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="nine mid-top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="nine center-nine">
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="nine mid-bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+              <div class="nine bottom-nine">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">9</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">10</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="ten of spades">
+              <div class="ten top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="ten top-center-ten">
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="ten mid-top-symbol">
+                <span class="spade center-suit">♠</span>
+                <span class="spade center-suit">♠</span>
+              </div>
+              <div class="ten mid-bottom-symbol">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+              <div class="ten bottom-center-ten">
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+              <div class="ten bottom-nine">
+                <span class="spade center-suit reverse">♠</span>
+                <span class="spade center-suit reverse">♠</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">10</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">10</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="ten of hearts">
+              <div class="ten top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="ten top-center-ten">
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="ten mid-top-symbol">
+                <span class="heart center-suit">♥</span>
+                <span class="heart center-suit">♥</span>
+              </div>
+              <div class="ten mid-bottom-symbol">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+              <div class="ten bottom-center-ten">
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+              <div class="ten bottom-nine">
+                <span class="heart center-suit reverse">♥</span>
+                <span class="heart center-suit reverse">♥</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">10</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">10</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="ten of diamonds">
+              <div class="ten top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="ten top-center-ten">
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="ten mid-top-symbol">
+                <span class="diamond center-suit">♦</span>
+                <span class="diamond center-suit">♦</span>
+              </div>
+              <div class="ten mid-bottom-symbol">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+              <div class="ten bottom-center-ten">
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+              <div class="ten bottom-nine">
+                <span class="diamond center-suit reverse">♦</span>
+                <span class="diamond center-suit reverse">♦</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">10</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">10</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="ten of clubs">
+              <div class="ten top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="ten top-center-ten">
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="ten mid-top-symbol">
+                <span class="club center-suit">♣</span>
+                <span class="club center-suit">♣</span>
+              </div>
+              <div class="ten mid-bottom-symbol">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+              <div class="ten bottom-center-ten">
+                <span class="club center-suit reverse">♣</span>
+              </div>
+              <div class="ten bottom-nine">
+                <span class="club center-suit reverse">♣</span>
+                <span class="club center-suit reverse">♣</span>
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">10</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">J</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="jack of spades">
+              <div class="ace">
+                <img src="./images/jack_of_spades.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">J</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">J</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="jack of hearts">
+              <div class="ace">
+                <img src="./images/jack_of_hearts.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">J</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+        
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">J</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="jack of diamonds">
+              <div class="ace">
+                <img src="./images/jack_of_diamond.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">J</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">J</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="jack of clubs">
+              <div class="ace">
+                <img src="./images/jack_of_club.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">J</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">Q</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="queen of spades">
+              <div class="ace">
+                <img src="./images/queen_of_spades.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">Q</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">Q</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="queen of hearts">
+              <div class="ace">
+                <img src="./images/queen_of_hearts.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">Q</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+        
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">Q</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="queen of diamonds">
+              <div class="ace">
+                <img src="./images/queen_of_diamonds.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">Q</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">Q</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="queen of clubs">
+              <div class="ace">
+                <img src="./images/queen_of_clubs.jpg" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">Q</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <div class="corner top-left">
+              <span class="value">K</span>
+              <span class="suit">♠</span>
+            </div>
+            <div class="content" alt="king of spades">
+              <div class="ace">
+                <img src="./images/king_of_spade.png" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">K</span>
+              <span class="suit">♠</span>
+            </div>
+        </div>
+
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">K</span>
+              <span class="suit">♥</span>
+            </div>
+            <div class="content" alt="king of hearts">
+              <div class="ace">
+                <img src="./images/king_of_heart.png" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">K</span>
+              <span class="suit">♥</span>
+            </div>
+        </div>
+        
+        <div class="card red">
+            <div class="corner top-left">
+              <span class="value">K</span>
+              <span class="suit">♦</span>
+            </div>
+            <div class="content" alt="king of diamonds">
+              <div class="ace">
+                <img src="./images/king_of_diamond.png" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">K</span>
+              <span class="suit">♦</span>
+            </div>
+        </div>
+
+        <div class="card black">
+            <img id="back" src="./images/card_back.jpeg" alt="">
+            <div class="corner top-left">
+              <span class="value">K</span>
+              <span class="suit">♣</span>
+            </div>
+            <div class="content" alt="king of clubs">
+              <div class="ace">
+                <img src="./images/king_of_club.png" alt="" class="card-image">
+              </div>
+            </div>
+            <div class="corner bottom-right">
+              <span class="value">K</span>
+              <span class="suit">♣</span>
+            </div>
+        </div>
+    </div>
+    <script src="war.js"></script>
+</body>
+</html>
